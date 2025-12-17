@@ -14,4 +14,8 @@ class Kategoria extends Model
         'kategoria_nev'
     ];
     // még azt kell beállítani, hogy 1 kategóriához N ingatlan tartozhat ......
+    public function ingatlanok()
+    {
+        return $this->hasMany(Ingatlan::class, 'kategoria_id');
+    }
 }

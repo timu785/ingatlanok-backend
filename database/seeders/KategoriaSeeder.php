@@ -15,5 +15,9 @@ class KategoriaSeeder extends Seeder
     {
         Kategoria::create(['kategoria_nev' => 'ház']);
         Kategoria::create(['kategoria_nev' => 'lakás']);
+        Kategoria::create(['kategoria_nev' => 'építési telek']);
+        Kategoria::create(['kategoria_nev' => 'garázs']);
+        Kategoria::create(['kategoria_nev' => 'mezőgazdasági épület']);
+        Kategoria::create(['kategoria_nev' => 'ipari ingatlan']);
     }
 }
